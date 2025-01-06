@@ -1,0 +1,81 @@
+*, *::after, *::before {
+    box-sizing: border-box;
+  }
+  
+  .modal {
+    position: fixed;
+    top: 50vh;
+    left: 50vw;
+    transform: translate(-50%, -50%) scale(0);
+    transition: 200ms ease-in-out;
+    box-shadow: 3px 3px 3px 3px rgb(0 0 0 /20%);
+    border-radius: 10px;
+    z-index: 10;
+    background-color: rgba(255, 255, 255, 0.473);
+    width: 30vw;
+    height: 15vh;
+    color: black;
+    cursor: move;
+    min-width: 280px;
+  }
+  
+  
+  .modal.active {
+    transform: translate(-50%, -50%) scale(1);
+  }
+  
+  .modal-header {
+    padding: 10px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid black;
+  }
+
+  
+  .modal-header .title {
+    font-size: 1.25rem;
+    font-weight: bold;
+  }
+  
+  .modal-header .close-button {
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 1.25rem;
+    font-weight: bold;
+
+  }
+
+  .modal-body {
+    padding: 10px 15px;
+    width: 30vw;
+    height: 15vh;
+  }
+  .values{
+    display: flex;
+    justify-content: space-between;
+  }
+.date, .time{
+    border: none;
+    outline: none;
+    height: 2.7vh;
+    width: 15vw;
+    font-size: 17px;
+    width: 10vw;
+    min-width: 120px;
+    background-color: rgba(219, 216, 216, 0.61);
+    border-radius: 25px;
+    padding: 5px;
+    color: black;
+  }
+  .addTime{
+    padding: 5px 10px;
+    border-radius: 25px;
+    background-color: rgba(219, 216, 216, 0.61);
+    border: none;
+    outline: none;
+    color: black;
+    font-size: 18px;
+  }
